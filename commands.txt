@@ -1,0 +1,1129 @@
+sceneG = nx.Digraph()
+sceneG.add_node("tyrion lannister")
+char_dict["tyrion lannister"] = 0
+sceneG.add_node("jon snow")
+char_dict["jon snow"] = 1
+sceneG.add_node("daenerys targaryen")
+char_dict["daenerys targaryen"] = 2
+sceneG.add_node("cersei lannister")
+char_dict["cersei lannister"] = 3
+sceneG.add_node("jaime lannister")
+char_dict["jaime lannister"] = 4
+sceneG.add_node("sansa stark")
+char_dict["sansa stark"] = 5
+sceneG.add_node("arya stark")
+char_dict["arya stark"] = 6
+sceneG.add_node("davos")
+char_dict["davos"] = 7
+sceneG.add_node("theon greyjoy")
+char_dict["theon greyjoy"] = 8
+sceneG.add_node("petyr baelish")
+char_dict["petyr baelish"] = 9
+sceneG.add_node("sam")
+char_dict["sam"] = 10
+sceneG.add_node("bran stark")
+char_dict["bran stark"] = 11
+sceneG.add_node("bronn")
+char_dict["bronn"] = 12
+sceneG.add_node("jorah mormont")
+char_dict["jorah mormont"] = 13
+sceneG.add_node("man")
+char_dict["man"] = 14
+sceneG.add_node("tywin lannister")
+char_dict["tywin lannister"] = 15
+sceneG.add_node("varys")
+char_dict["varys"] = 16
+sceneG.add_node("brienne")
+char_dict["brienne"] = 17
+sceneG.add_node("eddard stark")
+char_dict["eddard stark"] = 18
+sceneG.add_node("robb stark")
+char_dict["robb stark"] = 19
+sceneG.add_node("stannis baratheon")
+char_dict["stannis baratheon"] = 20
+sceneG.add_node("catelyn stark")
+char_dict["catelyn stark"] = 21
+sceneG.add_node("ramsay bolton")
+char_dict["ramsay bolton"] = 22
+sceneG.add_node("margaery tyrell")
+char_dict["margaery tyrell"] = 23
+sceneG.add_node("joffrey lannister")
+char_dict["joffrey lannister"] = 24
+sceneG.add_node("melisandre")
+char_dict["melisandre"] = 25
+sceneG.add_node("sandor clegane")
+char_dict["sandor clegane"] = 26
+sceneG.add_node("shae")
+char_dict["shae"] = 27
+sceneG.add_node("gendry baratheon")
+char_dict["gendry baratheon"] = 28
+sceneG.add_node("tormund")
+char_dict["tormund"] = 29
+sceneG.add_node("gilly")
+char_dict["gilly"] = 30
+sceneG.add_node("missandei")
+char_dict["missandei"] = 31
+sceneG.add_node("olenna tyrell")
+char_dict["olenna tyrell"] = 32
+sceneG.add_node("ygritte")
+char_dict["ygritte"] = 33
+sceneG.add_node("daario")
+char_dict["daario"] = 34
+sceneG.add_node("sam tarly")
+char_dict["sam tarly"] = 35
+sceneG.add_node("podrick")
+char_dict["podrick"] = 36
+sceneG.add_node("sparrow")
+char_dict["sparrow"] = 37
+sceneG.add_node("yara greyjoy")
+char_dict["yara greyjoy"] = 38
+sceneG.add_node("osha")
+char_dict["osha"] = 39
+sceneG.add_node("oberyn martell")
+char_dict["oberyn martell"] = 40
+sceneG.add_node("soldier")
+char_dict["soldier"] = 41
+sceneG.add_node("sandor")
+char_dict["sandor"] = 42
+sceneG.add_node("tommen lannister")
+char_dict["tommen lannister"] = 43
+sceneG.add_node("robert baratheon")
+char_dict["robert baratheon"] = 44
+sceneG.add_node("qyburn")
+char_dict["qyburn"] = 45
+sceneG.add_node("grey worm")
+char_dict["grey worm"] = 46
+sceneG.add_node("jaqen hghar")
+char_dict["jaqen hghar"] = 47
+sceneG.add_node("talisa")
+char_dict["talisa"] = 48
+sceneG.add_node("thoros")
+char_dict["thoros"] = 49
+sceneG.add_node("meera")
+char_dict["meera"] = 50
+sceneG.add_node("beric")
+char_dict["beric"] = 51
+sceneG.add_node("shireen")
+char_dict["shireen"] = 52
+sceneG.add_node("euron greyjoy")
+char_dict["euron greyjoy"] = 53
+sceneG.add_node("grenn")
+char_dict["grenn"] = 54
+sceneG.add_node("jojen")
+char_dict["jojen"] = 55
+sceneG.add_node("roose")
+char_dict["roose"] = 56
+sceneG.add_node("guard")
+char_dict["guard"] = 57
+sceneG.add_node("loras")
+char_dict["loras"] = 58
+sceneG.add_node("ros")
+char_dict["ros"] = 59
+sceneG.add_node("hot pie")
+char_dict["hot pie"] = 60
+sceneG.add_node("pycelle")
+char_dict["pycelle"] = 61
+sceneG.add_node("lancel")
+char_dict["lancel"] = 62
+sceneG.add_node("barristan")
+char_dict["barristan"] = 63
+sceneG.add_node("mance")
+char_dict["mance"] = 64
+sceneG.add_node("locke")
+char_dict["locke"] = 65
+sceneG.add_node("ellaria")
+char_dict["ellaria"] = 66
+sceneG.add_node("marwyn")
+char_dict["marwyn"] = 67
+sceneG.add_node("woman")
+char_dict["woman"] = 68
+sceneG.add_node("walder")
+char_dict["walder"] = 69
+sceneG.add_node("luwin")
+char_dict["luwin"] = 70
+sceneG.add_node("renly")
+char_dict["renly"] = 71
+sceneG.add_node("janos")
+char_dict["janos"] = 72
+sceneG.add_node("viserys targaryen")
+char_dict["viserys targaryen"] = 73
+sceneG.add_node("dolorous edd")
+char_dict["dolorous edd"] = 74
+sceneG.add_node("hizdahr")
+char_dict["hizdahr"] = 75
+sceneG.add_node("brynden")
+char_dict["brynden"] = 76
+sceneG.add_node("edmure")
+char_dict["edmure"] = 77
+sceneG.add_node("roose bolton")
+char_dict["roose bolton"] = 78
+sceneG.add_node("selyse")
+char_dict["selyse"] = 79
+sceneG.add_node("alliser thorne")
+char_dict["alliser thorne"] = 80
+sceneG.add_node("lady crane")
+char_dict["lady crane"] = 81
+sceneG.add_node("waif")
+char_dict["waif"] = 82
+sceneG.add_node("lyanna")
+char_dict["lyanna"] = 83
+sceneG.add_node("grand maester pycelle")
+char_dict["grand maester pycelle"] = 84
+sceneG.add_node("myranda")
+char_dict["myranda"] = 85
+sceneG.add_node("renly baratheon")
+char_dict["renly baratheon"] = 86
+sceneG.add_node("lysa")
+char_dict["lysa"] = 87
+sceneG.add_node("balon")
+char_dict["balon"] = 88
+sceneG.add_node("alliser")
+char_dict["alliser"] = 89
+sceneG.add_node("xaro")
+char_dict["xaro"] = 90
+sceneG.add_node("yoren")
+char_dict["yoren"] = 91
+sceneG.add_node("qhorin")
+char_dict["qhorin"] = 92
+sceneG.add_node("maester luwin")
+char_dict["maester luwin"] = 93
+sceneG.add_node("doreah")
+char_dict["doreah"] = 94
+sceneG.add_node("olyvar")
+char_dict["olyvar"] = 95
+sceneG.add_node("randyll")
+char_dict["randyll"] = 96
+sceneG.add_node("ray")
+char_dict["ray"] = 97
+sceneG.add_node("tycho")
+char_dict["tycho"] = 98
+sceneG.add_node("petyr")
+char_dict["petyr"] = 99
+sceneG.add_node("orell")
+char_dict["orell"] = 100
+sceneG.add_node("spice king")
+char_dict["spice king"] = 101
+sceneG.add_node("mace")
+char_dict["mace"] = 102
+sceneG.add_node("rickard karstark")
+char_dict["rickard karstark"] = 103
+sceneG.add_node("myrcella")
+char_dict["myrcella"] = 104
+sceneG.add_node("men")
+char_dict["men"] = 105
+sceneG.add_node("pyp")
+char_dict["pyp"] = 106
+sceneG.add_node("jory cassel")
+char_dict["jory cassel"] = 107
+sceneG.add_node("alton")
+char_dict["alton"] = 108
+sceneG.add_node("jeor mormont")
+char_dict["jeor mormont"] = 109
+sceneG.add_node("maester aemon")
+char_dict["maester aemon"] = 110
+sceneG.add_node("syrio forel")
+char_dict["syrio forel"] = 111
+sceneG.add_node("anguy")
+char_dict["anguy"] = 112
+sceneG.add_node("jeor")
+char_dict["jeor"] = 113
+sceneG.add_node("matthos")
+char_dict["matthos"] = 114
+sceneG.add_node("tyene")
+char_dict["tyene"] = 115
+sceneG.add_node("doran")
+char_dict["doran"] = 116
+sceneG.add_node("edd")
+char_dict["edd"] = 117
+sceneG.add_node("lysa arryn")
+char_dict["lysa arryn"] = 118
+sceneG.add_node("aemon")
+char_dict["aemon"] = 119
+sceneG.add_node("robin")
+char_dict["robin"] = 120
+sceneG.add_node("threeeyed raven")
+char_dict["threeeyed raven"] = 121
+sceneG.add_node("septa mordane")
+char_dict["septa mordane"] = 122
+sceneG.add_node("walder frey")
+char_dict["walder frey"] = 123
+sceneG.add_node("barristan selmy")
+char_dict["barristan selmy"] = 124
+sceneG.add_node("craster")
+char_dict["craster"] = 125
+sceneG.add_node("kevan")
+char_dict["kevan"] = 126
+sceneG.add_node("olly")
+char_dict["olly"] = 127
+sceneG.add_node("tanner")
+char_dict["tanner"] = 128
+sceneG.add_node("irri")
+char_dict["irri"] = 129
+sceneG.add_node("rast")
+char_dict["rast"] = 130
+sceneG.add_node("loras tyrell")
+char_dict["loras tyrell"] = 131
+sceneG.add_node("hodor")
+char_dict["hodor"] = 132
+sceneG.add_node("ser dontos")
+char_dict["ser dontos"] = 133
+sceneG.add_node("benjen")
+char_dict["benjen"] = 134
+sceneG.add_node("izembaro")
+char_dict["izembaro"] = 135
+sceneG.add_node("khal moro")
+char_dict["khal moro"] = 136
+sceneG.add_node("ser jorah")
+char_dict["ser jorah"] = 137
+sceneG.add_node("polliver")
+char_dict["polliver"] = 138
+sceneG.add_node("septon")
+char_dict["septon"] = 139
+sceneG.add_node("rakharo")
+char_dict["rakharo"] = 140
+sceneG.add_node("crowd")
+char_dict["crowd"] = 141
+sceneG.add_node("mero")
+char_dict["mero"] = 142
+sceneG.add_node("dickon")
+char_dict["dickon"] = 143
+sceneG.add_node("meryn")
+char_dict["meryn"] = 144
+sceneG.add_node("karl tanner")
+char_dict["karl tanner"] = 145
+sceneG.add_node("black walder")
+char_dict["black walder"] = 146
+sceneG.add_node("kraznys")
+char_dict["kraznys"] = 147
+sceneG.add_node("mirri maz duur")
+char_dict["mirri maz duur"] = 148
+sceneG.add_node("obara")
+char_dict["obara"] = 149
+sceneG.add_node("lord mormont")
+char_dict["lord mormont"] = 150
+sceneG.add_node("dagmer")
+char_dict["dagmer"] = 151
+sceneG.add_node("viserys")
+char_dict["viserys"] = 152
+sceneG.add_node("all")
+char_dict["all"] = 153
+sceneG.add_node("maester")
+char_dict["maester"] = 154
+sceneG.add_node("janos slynt")
+char_dict["janos slynt"] = 155
+sceneG.add_node("malko")
+char_dict["malko"] = 156
+sceneG.add_node("bobono")
+char_dict["bobono"] = 157
+sceneG.add_node("styr")
+char_dict["styr"] = 158
+sceneG.add_node("smalljon")
+char_dict["smalljon"] = 159
+sceneG.add_node("rickon")
+char_dict["rickon"] = 160
+sceneG.add_node("lord royce")
+char_dict["lord royce"] = 161
+sceneG.add_node("captain")
+char_dict["captain"] = 162
+sceneG.add_node("pyat pree")
+char_dict["pyat pree"] = 163
+sceneG.add_node("lord varys")
+char_dict["lord varys"] = 164
+sceneG.add_node("mossador")
+char_dict["mossador"] = 165
+sceneG.add_node("end")
+char_dict["end"] = 166
+sceneG.add_node("camello")
+char_dict["camello"] = 167
+sceneG.add_node("salladhor")
+char_dict["salladhor"] = 168
+sceneG.add_node("robett")
+char_dict["robett"] = 169
+sceneG.add_node("old man")
+char_dict["old man"] = 170
+sceneG.add_node("lothar")
+char_dict["lothar"] = 171
+sceneG.add_node("frey soldier")
+char_dict["frey soldier"] = 172
+sceneG.add_node("bloodrider")
+char_dict["bloodrider"] = 173
+sceneG.add_node("saan")
+char_dict["saan"] = 174
+sceneG.add_node("lady anya")
+char_dict["lady anya"] = 175
+sceneG.add_node("ed")
+char_dict["ed"] = 176
+sceneG.add_node("melessa")
+char_dict["melessa"] = 177
+sceneG.add_node("karsi")
+char_dict["karsi"] = 178
+sceneG.add_node("rider")
+char_dict["rider"] = 179
+sceneG.add_node("wolkan")
+char_dict["wolkan"] = 180
+sceneG.add_node("nymeria")
+char_dict["nymeria"] = 181
+sceneG.add_node("violet")
+char_dict["violet"] = 182
+sceneG.add_node("roz")
+char_dict["roz"] = 183
+sceneG.add_node("trystane")
+char_dict["trystane"] = 184
+sceneG.add_node("rodrik")
+char_dict["rodrik"] = 185
+sceneG.add_node("marillion")
+char_dict["marillion"] = 186
+sceneG.add_node("khal drogo")
+char_dict["khal drogo"] = 187
+sceneG.add_node("illyrio")
+char_dict["illyrio"] = 188
+sceneG.add_node("loboda")
+char_dict["loboda"] = 189
+sceneG.add_node("lord of bones")
+char_dict["lord of bones"] = 190
+sceneG.add_node("benjen stark")
+char_dict["benjen stark"] = 191
+sceneG.add_node("greatjon umber")
+char_dict["greatjon umber"] = 192
+sceneG.add_node("moles town whore")
+char_dict["moles town whore"] = 193
+sceneG.add_node("wildling")
+char_dict["wildling"] = 194
+sceneG.add_node("royce")
+char_dict["royce"] = 195
+sceneG.add_node("farmer hamlet")
+char_dict["farmer hamlet"] = 196
+sceneG.add_node("wine merchant")
+char_dict["wine merchant"] = 197
+sceneG.add_node("derryk")
+char_dict["derryk"] = 198
+sceneG.add_node("knight")
+char_dict["knight"] = 199
+sceneG.add_node("qotho")
+char_dict["qotho"] = 200
+sceneG.add_node("maester wolkan")
+char_dict["maester wolkan"] = 201
+sceneG.add_node("prisoner")
+char_dict["prisoner"] = 202
+sceneG.add_node("radzal mo eraz")
+char_dict["radzal mo eraz"] = 203
+sceneG.add_node("yohn royce")
+char_dict["yohn royce"] = 204
+sceneG.add_node("dying man")
+char_dict["dying man"] = 205
+sceneG.add_node("girl")
+char_dict["girl"] = 206
+sceneG.add_node("maggy")
+char_dict["maggy"] = 207
+sceneG.add_node("meryn trant")
+char_dict["meryn trant"] = 208
+sceneG.add_node("rennick")
+char_dict["rennick"] = 209
+sceneG.add_node("guard captain")
+char_dict["guard captain"] = 210
+sceneG.add_node("kinvara")
+char_dict["kinvara"] = 211
+sceneG.add_node("robin arryn")
+char_dict["robin arryn"] = 212
+sceneG.add_node("prostitute")
+char_dict["prostitute"] = 213
+sceneG.add_node("ralf")
+char_dict["ralf"] = 214
+sceneG.add_node("black lorren")
+char_dict["black lorren"] = 215
+sceneG.add_node("kevan lannister")
+char_dict["kevan lannister"] = 216
+sceneG.add_node("rorge")
+char_dict["rorge"] = 217
+sceneG.add_node("gatins")
+char_dict["gatins"] = 218
+sceneG.add_node("mountain")
+char_dict["mountain"] = 219
+sceneG.add_node("aeron")
+char_dict["aeron"] = 220
+sceneG.add_node("clarenzo")
+char_dict["clarenzo"] = 221
+sceneG.add_node("nights watchman")
+char_dict["nights watchman"] = 222
+sceneG.add_node("gold cloak")
+char_dict["gold cloak"] = 223
+sceneG.add_node("mordane")
+char_dict["mordane"] = 224
+sceneG.add_node("harrag")
+char_dict["harrag"] = 225
+sceneG.add_node("mord")
+char_dict["mord"] = 226
+sceneG.add_node("torturer")
+char_dict["torturer"] = 227
+sceneG.add_node("amory")
+char_dict["amory"] = 228
+sceneG.add_node("sallador")
+char_dict["sallador"] = 229
+sceneG.add_node("black haired prostitute")
+char_dict["black haired prostitute"] = 230
+sceneG.add_node("khal")
+char_dict["khal"] = 231
+sceneG.add_node("announcer")
+char_dict["announcer"] = 232
+sceneG.add_node("kraznys mo nakloz")
+char_dict["kraznys mo nakloz"] = 233
+sceneG.add_node("banker")
+char_dict["banker"] = 234
+sceneG.add_node("king joffrey")
+char_dict["king joffrey"] = 235
+sceneG.add_node("joffrey dwarf")
+char_dict["joffrey dwarf"] = 236
+sceneG.add_node("nora")
+char_dict["nora"] = 237
+sceneG.add_node("areo")
+char_dict["areo"] = 238
+sceneG.add_node("fennesz")
+char_dict["fennesz"] = 239
+sceneG.add_node("lhazareen woman")
+char_dict["lhazareen woman"] = 240
+sceneG.add_node("tickler")
+char_dict["tickler"] = 241
+sceneG.add_node("arthur")
+char_dict["arthur"] = 242
+sceneG.add_node("lady walda")
+char_dict["lady walda"] = 243
+sceneG.add_node("kovarro")
+char_dict["kovarro"] = 244
+sceneG.add_node("lord karstark")
+char_dict["lord karstark"] = 245
+sceneG.add_node("haylene")
+char_dict["haylene"] = 246
+sceneG.add_node("yohn")
+char_dict["yohn"] = 247
+sceneG.add_node("prendahl")
+char_dict["prendahl"] = 248
+sceneG.add_node("steelshanks walton")
+char_dict["steelshanks walton"] = 249
+sceneG.add_node("crayah")
+char_dict["crayah"] = 250
+sceneG.add_node("rodrick cassel")
+char_dict["rodrick cassel"] = 251
+sceneG.add_node("handmaiden")
+char_dict["handmaiden"] = 252
+sceneG.add_node("will")
+char_dict["will"] = 253
+sceneG.add_node("martyn")
+char_dict["martyn"] = 254
+sceneG.add_node("ser barristan")
+char_dict["ser barristan"] = 255
+sceneG.add_node("bianca")
+char_dict["bianca"] = 256
+sceneG.add_node("wounded soldier")
+char_dict["wounded soldier"] = 257
+sceneG.add_node("yezzan")
+char_dict["yezzan"] = 258
+sceneG.add_node("lollys")
+char_dict["lollys"] = 259
+sceneG.add_node("lancel lannister")
+char_dict["lancel lannister"] = 260
+sceneG.add_node("melara")
+char_dict["melara"] = 261
+sceneG.add_node("quaith")
+char_dict["quaith"] = 262
+sceneG.add_node("razdal")
+char_dict["razdal"] = 263
+sceneG.add_node("cressen")
+char_dict["cressen"] = 264
+sceneG.add_node("wife")
+char_dict["wife"] = 265
+sceneG.add_node("leader")
+char_dict["leader"] = 266
+sceneG.add_node("lady olenna")
+char_dict["lady olenna"] = 267
+sceneG.add_node("priestess")
+char_dict["priestess"] = 268
+sceneG.add_node("dirah")
+char_dict["dirah"] = 269
+sceneG.add_node("thin man")
+char_dict["thin man"] = 270
+sceneG.add_node("lem")
+char_dict["lem"] = 271
+sceneG.add_node("owner")
+char_dict["owner"] = 272
+sceneG.add_node("young ned")
+char_dict["young ned"] = 273
+sceneG.add_node("daisy")
+char_dict["daisy"] = 274
+sceneG.add_node("lord")
+char_dict["lord"] = 275
+sceneG.add_node("maid")
+char_dict["maid"] = 276
+sceneG.add_node("elaria")
+char_dict["elaria"] = 277
+sceneG.add_node("tobho mott")
+char_dict["tobho mott"] = 278
+sceneG.add_node("unsullied")
+char_dict["unsullied"] = 279
+sceneG.add_node("harry")
+char_dict["harry"] = 280
+sceneG.add_node("blacksmith")
+char_dict["blacksmith"] = 281
+sceneG.add_node("morgan")
+char_dict["morgan"] = 282
+sceneG.add_node("lommy greenhands")
+char_dict["lommy greenhands"] = 283
+sceneG.add_node("othell yarwyck")
+char_dict["othell yarwyck"] = 284
+sceneG.add_node("rattleshirt")
+char_dict["rattleshirt"] = 285
+sceneG.add_node("old nan")
+char_dict["old nan"] = 286
+sceneG.add_node("vardis egen")
+char_dict["vardis egen"] = 287
+sceneG.add_node("septa")
+char_dict["septa"] = 288
+sceneG.add_node("balon dwarf")
+char_dict["balon dwarf"] = 289
+sceneG.add_node("walda")
+char_dict["walda"] = 290
+sceneG.add_node("head")
+char_dict["head"] = 291
+sceneG.add_node("rodrik cassel")
+char_dict["rodrik cassel"] = 292
+sceneG.add_node("pyatt pree")
+char_dict["pyatt pree"] = 293
+sceneG.add_node("blackfish")
+char_dict["blackfish"] = 294
+sceneG.add_node("rickon stark")
+char_dict["rickon stark"] = 295
+sceneG.add_node("septa unella")
+char_dict["septa unella"] = 296
+sceneG.add_node("winterfell shepherd")
+char_dict["winterfell shepherd"] = 297
+sceneG.add_node("robb dwarf")
+char_dict["robb dwarf"] = 298
+sceneG.add_node("leaf")
+char_dict["leaf"] = 299
+sceneG.add_node("drogo")
+char_dict["drogo"] = 300
+sceneG.add_node("maester pycelle")
+char_dict["maester pycelle"] = 301
+sceneG.add_node("young benjen")
+char_dict["young benjen"] = 302
+sceneG.add_node("jacks")
+char_dict["jacks"] = 303
+sceneG.add_node("mhaegen")
+char_dict["mhaegen"] = 304
+sceneG.add_node("drogon")
+char_dict["drogon"] = 305
+sceneG.add_node("kingsguard")
+char_dict["kingsguard"] = 306
+sceneG.add_node("illyrio mopatis")
+char_dict["illyrio mopatis"] = 307
+sceneG.add_node("elder meereen slave")
+char_dict["elder meereen slave"] = 308
+sceneG.add_node("alliser thorn")
+char_dict["alliser thorn"] = 309
+sceneG.add_node("whore")
+char_dict["whore"] = 310
+sceneG.add_node("priest")
+char_dict["priest"] = 311
+sceneG.add_node("kings soldier")
+char_dict["kings soldier"] = 312
+sceneG.add_node("quorin")
+char_dict["quorin"] = 313
+sceneG.add_node("martha")
+char_dict["martha"] = 314
+sceneG.add_node("frey guard")
+char_dict["frey guard"] = 315
+sceneG.add_node("vicky")
+char_dict["vicky"] = 316
+sceneG.add_node("mycah")
+char_dict["mycah"] = 317
+sceneG.add_node("northman")
+char_dict["northman"] = 318
+sceneG.add_node("donnel")
+char_dict["donnel"] = 319
+sceneG.add_node("young man")
+char_dict["young man"] = 320
+sceneG.add_node("teela")
+char_dict["teela"] = 321
+sceneG.add_node("young hodor")
+char_dict["young hodor"] = 322
+sceneG.add_node("child")
+char_dict["child"] = 323
+sceneG.add_node("pig farmer")
+char_dict["pig farmer"] = 324
+sceneG.add_node("militant")
+char_dict["militant"] = 325
+sceneG.add_node("gared")
+char_dict["gared"] = 326
+sceneG.add_node("cassel")
+char_dict["cassel"] = 327
+sceneG.add_node("steward")
+char_dict["steward"] = 328
+sceneG.add_node("vala")
+char_dict["vala"] = 329
+sceneG.add_node("masha heddle")
+char_dict["masha heddle"] = 330
+sceneG.add_node("brother")
+char_dict["brother"] = 331
+sceneG.add_node("slaves")
+char_dict["slaves"] = 332
+sceneG.add_node("women")
+char_dict["women"] = 333
+sceneG.add_node("drowned priest")
+char_dict["drowned priest"] = 334
+sceneG.add_node("sissy")
+char_dict["sissy"] = 335
+sceneG.add_node("hugh of vale")
+char_dict["hugh of vale"] = 336
+sceneG.add_node("bolton guard")
+char_dict["bolton guard"] = 337
+sceneG.add_node("reginald")
+char_dict["reginald"] = 338
+sceneG.add_node("dothraki matron")
+char_dict["dothraki matron"] = 339
+sceneG.add_node("young lyanna")
+char_dict["young lyanna"] = 340
+sceneG.add_node("slaver")
+char_dict["slaver"] = 341
+sceneG.add_node("lannister soldier")
+char_dict["lannister soldier"] = 342
+sceneG.add_node("lommy")
+char_dict["lommy"] = 343
+sceneG.add_node("moles town madam")
+char_dict["moles town madam"] = 344
+sceneG.add_node("stark guard")
+char_dict["stark guard"] = 345
+sceneG.add_node("talla")
+char_dict["talla"] = 346
+sceneG.add_node("marei")
+char_dict["marei"] = 347
+sceneG.add_node("bolton officer")
+char_dict["bolton officer"] = 348
+sceneG.add_node("kings landing baker")
+char_dict["kings landing baker"] = 349
+sceneG.add_node("glover")
+char_dict["glover"] = 350
+sceneG.add_node("populace")
+char_dict["populace"] = 351
+sceneG.add_node("jonos bracken")
+char_dict["jonos bracken"] = 352
+sceneG.add_node("maester pycell")
+char_dict["maester pycell"] = 353
+sceneG.add_node("boy")
+char_dict["boy"] = 354
+sceneG.add_node("dothraki")
+char_dict["dothraki"] = 355
+sceneG.add_node("rickard")
+char_dict["rickard"] = 356
+sceneG.add_node("stable boy")
+char_dict["stable boy"] = 357
+sceneG.add_node("messenger")
+char_dict["messenger"] = 358
+sceneG.add_node("tansy")
+char_dict["tansy"] = 359
+sceneG.add_node("dornish lord")
+char_dict["dornish lord"] = 360
+sceneG.add_node("umber")
+char_dict["umber"] = 361
+sceneG.add_node("stannis dwarf")
+char_dict["stannis dwarf"] = 362
+sceneG.add_node("renly dwarf")
+char_dict["renly dwarf"] = 363
+sceneG.add_node("buyer")
+char_dict["buyer"] = 364
+sceneG.add_node("axell florent")
+char_dict["axell florent"] = 365
+sceneG.add_node("quaithe")
+char_dict["quaithe"] = 366
+sceneG.add_node("little bird")
+char_dict["little bird"] = 367
+sceneG.add_node("gerard")
+char_dict["gerard"] = 368
+sceneG.add_node("frey man")
+char_dict["frey man"] = 369
+sceneG.add_node("dim dalba")
+char_dict["dim dalba"] = 370
+sceneG.add_node("child of forest")
+char_dict["child of forest"] = 371
+sceneG.add_node("attendant")
+char_dict["attendant"] = 372
+sceneG.add_node("belicho")
+char_dict["belicho"] = 373
+sceneG.add_node("owen")
+char_dict["owen"] = 374
+sceneG.add_node("squire")
+char_dict["squire"] = 375
+sceneG.add_node("master of arms")
+char_dict["master of arms"] = 376
+sceneG.add_node("waitress")
+char_dict["waitress"] = 377
+sceneG.add_node("alliser throne")
+char_dict["alliser throne"] = 378
+sceneG.add_node("red priest")
+char_dict["red priest"] = 379
+sceneG.add_node("brothers")
+char_dict["brothers"] = 380
+sceneG.add_node("storyteller")
+char_dict["storyteller"] = 381
+sceneG.add_node("mace tyrell")
+char_dict["mace tyrell"] = 382
+sceneG.add_node("wun wun")
+char_dict["wun wun"] = 383
+sceneG.add_node("vale knight")
+char_dict["vale knight"] = 384
+sceneG.add_node("master")
+char_dict["master"] = 385
+sceneG.add_node("father")
+char_dict["father"] = 386
+sceneG.add_node("lyanna mormont")
+char_dict["lyanna mormont"] = 387
+sceneG.add_node("ellia")
+char_dict["ellia"] = 388
+sceneG.add_node("male voice")
+char_dict["male voice"] = 389
+sceneG.add_node("waymar royce")
+char_dict["waymar royce"] = 390
+sceneG.add_node("ironborn")
+char_dict["ironborn"] = 391
+sceneG.add_node("sam pyp and grenn")
+char_dict["sam pyp and grenn"] = 392
+sceneG.add_node("first mate")
+char_dict["first mate"] = 393
+sceneG.add_node("leo lefford")
+char_dict["leo lefford"] = 394
+sceneG.add_node("eddark stark")
+char_dict["eddark stark"] = 395
+sceneG.add_node("street urchin")
+char_dict["street urchin"] = 396
+sceneG.add_node("meereen slave")
+char_dict["meereen slave"] = 397
+sceneG.add_node("yarwyck")
+char_dict["yarwyck"] = 398
+sceneG.add_node("guymon")
+char_dict["guymon"] = 399
+sceneG.add_node("pypar")
+char_dict["pypar"] = 400
+sceneG.add_node("nights watcher")
+char_dict["nights watcher"] = 401
+sceneG.add_node("everyone")
+char_dict["everyone"] = 402
+sceneG.add_node("kings landing page")
+char_dict["kings landing page"] = 403
+sceneG.add_node("lannister scout")
+char_dict["lannister scout"] = 404
+sceneG.add_node("kings guard")
+char_dict["kings guard"] = 405
+sceneG.add_node("morgans friend")
+char_dict["morgans friend"] = 406
+sceneG.add_node("daughter")
+char_dict["daughter"] = 407
+sceneG.add_node("shagga")
+char_dict["shagga"] = 408
+sceneG.add_node("nights watch brother")
+char_dict["nights watch brother"] = 409
+sceneG.add_node("addam marbrand")
+char_dict["addam marbrand"] = 410
+sceneG.add_node("morag")
+char_dict["morag"] = 411
+sceneG.add_node("ser vardis")
+char_dict["ser vardis"] = 412
+sceneG.add_node("ahsa")
+char_dict["ahsa"] = 413
+sceneG.add_node("protester")
+char_dict["protester"] = 414
+sceneG.add_node("farlen")
+char_dict["farlen"] = 415
+sceneG.add_node("all together")
+char_dict["all together"] = 416
+sceneG.add_node("mhaegan")
+char_dict["mhaegan"] = 417
+sceneG.add_node("nights watch")
+char_dict["nights watch"] = 418
+sceneG.add_node("kings landing guard")
+char_dict["kings landing guard"] = 419
+sceneG.add_node("frey men")
+char_dict["frey men"] = 420
+sceneG.add_node("knight of house whent")
+char_dict["knight of house whent"] = 421
+sceneG.add_node("yarwick")
+char_dict["yarwick"] = 422
+sceneG.add_node("watchman")
+char_dict["watchman"] = 423
+sceneG.add_node("stark bannermen")
+char_dict["stark bannermen"] = 424
+sceneG.add_node("othell yarwick")
+char_dict["othell yarwick"] = 425
+sceneG.add_node("title")
+char_dict["title"] = 426
+sceneG.add_node("cold")
+char_dict["cold"] = 427
+sceneG.add_node("rodrik cassal")
+char_dict["rodrik cassal"] = 428
+sceneG.add_node("ladyc rane")
+char_dict["ladyc rane"] = 429
+sceneG.add_node("galbart glover")
+char_dict["galbart glover"] = 430
+sceneG.add_node("red priestess")
+char_dict["red priestess"] = 431
+sceneG.add_node("stevron frey")
+char_dict["stevron frey"] = 432
+sceneG.add_node("ryger rivers")
+char_dict["ryger rivers"] = 433
+sceneG.add_node("voices outside")
+char_dict["voices outside"] = 434
+sceneG.add_node("unidentified nights watchers")
+char_dict["unidentified nights watchers"] = 435
+sceneG.add_node("others at table")
+char_dict["others at table"] = 436
+sceneG.add_node("ser rodrik")
+char_dict["ser rodrik"] = 437
+sceneG.add_node("kevin")
+char_dict["kevin"] = 438
+sceneG.add_node("several stark bannermen")
+char_dict["several stark bannermen"] = 439
+sceneG.add_node("tribesmen of vale")
+char_dict["tribesmen of vale"] = 440
+sceneG.add_node("aerson")
+char_dict["aerson"] = 441
+sceneG.add_node("group")
+char_dict["group"] = 442
+sceneG.add_node("portan")
+char_dict["portan"] = 443
+sceneG.add_node("cohollo")
+char_dict["cohollo"] = 444
+sceneG.add_node("mistress")
+char_dict["mistress"] = 445
+sceneG.add_node("bryndel")
+char_dict["bryndel"] = 446
+sceneG.add_node("jhiqui")
+char_dict["jhiqui"] = 447
+sceneG.add_node("brans voice")
+char_dict["brans voice"] = 448
+sceneG.add_node("barriston")
+char_dict["barriston"] = 449
+sceneG.add_node("knight of house bracken")
+char_dict["knight of house bracken"] = 450
+sceneG.add_node("dothraki man")
+char_dict["dothraki man"] = 451
+sceneG.add_node("both")
+char_dict["both"] = 452
+sceneG.add_node("rhakaro")
+char_dict["rhakaro"] = 453
+sceneG.add_node("lyann")
+char_dict["lyann"] = 454
+sceneG.add_node("assassin")
+char_dict["assassin"] = 455
+sceneG.add_node("ser alliser")
+char_dict["ser alliser"] = 456
+sceneG.add_node("myrcella baratheon")
+char_dict["myrcella baratheon"] = 457
+sceneG.add_node("a voice")
+char_dict["a voice"] = 458
+sceneG.add_node("jonrobb")
+char_dict["jonrobb"] = 459
+sceneG.add_node("riverlands lord")
+char_dict["riverlands lord"] = 460
+sceneG.add_node("dornish prince")
+char_dict["dornish prince"] = 461
+sceneG.add_node("ironborn lord")
+char_dict["ironborn lord"] = 462
+sceneG.add_node("vale lord")
+char_dict["vale lord"] = 463
+sceneG.add_node("rhaegar")
+char_dict["rhaegar"] = 464
+sceneG.add_node("john royce")
+char_dict["john royce"] = 465
+sceneG.add_node("beric dondarrion")
+char_dict["beric dondarrion"] = 466
+sceneG.add_node("archmaester")
+char_dict["archmaester"] = 467
+sceneG.add_node("karstark")
+char_dict["karstark"] = 468
+sceneG.add_node("all three")
+char_dict["all three"] = 469
+sceneG.add_node("maryn trant")
+char_dict["maryn trant"] = 470
+sceneG.add_node("manderly")
+char_dict["manderly"] = 471
+sceneG.add_node("steward of house stark")
+char_dict["steward of house stark"] = 472
+sceneG.add_node("waldery frey")
+char_dict["waldery frey"] = 473
+sceneG.add_node("tomard")
+char_dict["tomard"] = 474
+sceneG.add_node("ned alys")
+char_dict["ned alys"] = 475
+sceneG.add_node("tell me something")
+char_dict["tell me something"] = 476
+sceneG.add_node("little sam")
+char_dict["little sam"] = 477
+sceneG.add_node("jaremy rykker")
+char_dict["jaremy rykker"] = 478
+sceneG.add_node("robett glover")
+char_dict["robett glover"] = 479
+sceneG.add_node("deanerys targarian")
+char_dict["deanerys targarian"] = 480
+sceneG.add_node("night watch stable boy")
+char_dict["night watch stable boy"] = 481
+sceneG.add_node("archers")
+char_dict["archers"] = 482
+sceneG.add_node("bowen marsh")
+char_dict["bowen marsh"] = 483
+sceneG.add_node("white rat")
+char_dict["white rat"] = 484
+sceneG.add_node("colen")
+char_dict["colen"] = 485
+sceneG.add_node("ollys mother")
+char_dict["ollys mother"] = 486
+sceneG.add_node("lhara")
+char_dict["lhara"] = 487
+sceneG.add_node("merchant")
+char_dict["merchant"] = 488
+sceneG.add_node("client")
+char_dict["client"] = 489
+sceneG.add_node("dolrous edd")
+char_dict["dolrous edd"] = 490
+sceneG.add_node("doloroud edd")
+char_dict["doloroud edd"] = 491
+sceneG.add_node("karl")
+char_dict["karl"] = 492
+sceneG.add_node("allister")
+char_dict["allister"] = 493
+sceneG.add_node("sand snakes")
+char_dict["sand snakes"] = 494
+sceneG.add_node("manservant")
+char_dict["manservant"] = 495
+sceneG.add_node("ranger")
+char_dict["ranger"] = 496
+sceneG.add_node("sammy")
+char_dict["sammy"] = 497
+sceneG.add_node("slave buyer")
+char_dict["slave buyer"] = 498
+sceneG.add_node("musician")
+char_dict["musician"] = 499
+sceneG.add_node("buer")
+char_dict["buer"] = 500
+sceneG.add_node("slave owner")
+char_dict["slave owner"] = 501
+sceneG.add_node("innkeeper")
+char_dict["innkeeper"] = 502
+sceneG.add_node("blonde prostitute")
+char_dict["blonde prostitute"] = 503
+sceneG.add_node("pyelle")
+char_dict["pyelle"] = 504
+sceneG.add_node("officer")
+char_dict["officer"] = 505
+sceneG.add_node("thenn warg")
+char_dict["thenn warg"] = 506
+sceneG.add_node("cooper")
+char_dict["cooper"] = 507
+sceneG.add_node("grand maester pyrcelle")
+char_dict["grand maester pyrcelle"] = 508
+sceneG.add_node("daario naharis")
+char_dict["daario naharis"] = 509
+sceneG.add_node("hizdahr zo loraq")
+char_dict["hizdahr zo loraq"] = 510
+sceneG.add_node("braavosi man")
+char_dict["braavosi man"] = 511
+sceneG.add_node("member")
+char_dict["member"] = 512
+sceneG.add_node("lollys stokeworth")
+char_dict["lollys stokeworth"] = 513
+sceneG.add_node("pycell")
+char_dict["pycell"] = 514
+sceneG.add_node("bystanders")
+char_dict["bystanders"] = 515
+sceneG.add_node("together")
+char_dict["together"] = 516
+sceneG.add_node("hunters")
+char_dict["hunters"] = 517
+sceneG.add_node("lord bolton")
+char_dict["lord bolton"] = 518
+sceneG.add_node("shadow tower brother")
+char_dict["shadow tower brother"] = 519
+sceneG.add_node("ser vance")
+char_dict["ser vance"] = 520
+sceneG.add_node("harpy")
+char_dict["harpy"] = 521
+sceneG.add_node("mosador")
+char_dict["mosador"] = 522
+sceneG.add_node("janos slunt")
+char_dict["janos slunt"] = 523
+sceneG.add_node("bolton bannerman")
+char_dict["bolton bannerman"] = 524
+sceneG.add_node("timett")
+char_dict["timett"] = 525
+sceneG.add_node("mountian")
+char_dict["mountian"] = 526
+sceneG.add_node("main")
+char_dict["main"] = 527
+sceneG.add_node("male singer")
+char_dict["male singer"] = 528
+sceneG.add_node("eddision")
+char_dict["eddision"] = 529
+sceneG.add_node("young rodrik")
+char_dict["young rodrik"] = 530
+sceneG.add_node("mar")
+char_dict["mar"] = 531
+sceneG.add_node("pyattpree")
+char_dict["pyattpree"] = 532
+sceneG.add_node("silk king")
+char_dict["silk king"] = 533
+sceneG.add_node("rikon")
+char_dict["rikon"] = 534
+sceneG.add_node("listeners")
+char_dict["listeners"] = 535
+sceneG.add_node("quent")
+char_dict["quent"] = 536
+sceneG.add_node("cuard")
+char_dict["cuard"] = 537
+sceneG.add_node("armory")
+char_dict["armory"] = 538
+sceneG.add_node("hooded figure")
+char_dict["hooded figure"] = 539
+sceneG.add_node("dolorous")
+char_dict["dolorous"] = 540
+sceneG.add_node("dothraki woman")
+char_dict["dothraki woman"] = 541
+sceneG.add_node("spice")
+char_dict["spice"] = 542
+sceneG.add_node("tailor")
+char_dict["tailor"] = 543
+sceneG.add_node("servant")
+char_dict["servant"] = 544
+sceneG.add_node("warg")
+char_dict["warg"] = 545
+sceneG.add_node("quick")
+char_dict["quick"] = 546
+sceneG.add_node("wildling elder")
+char_dict["wildling elder"] = 547
+sceneG.add_node("giant")
+char_dict["giant"] = 548
+sceneG.add_node("shouting")
+char_dict["shouting"] = 549
+sceneG.add_node("everybody")
+char_dict["everybody"] = 550
+sceneG.add_node("brothel keeper")
+char_dict["brothel keeper"] = 551
+sceneG.add_node("head prostitute")
+char_dict["head prostitute"] = 552
+sceneG.add_node("edmure roslin")
+char_dict["edmure roslin"] = 553
+sceneG.add_node("strong")
+char_dict["strong"] = 554
+sceneG.add_node("driver")
+char_dict["driver"] = 555
+sceneG.add_node("survivor")
+char_dict["survivor"] = 556
+sceneG.add_node("voice")
+char_dict["voice"] = 557
+sceneG.add_node("roslin")
+char_dict["roslin"] = 558
+sceneG.add_node("merry")
+char_dict["merry"] = 559
+sceneG.add_node("nights watchmen")
+char_dict["nights watchmen"] = 560
+sceneG.add_node("willem")
+char_dict["willem"] = 561
+sceneG.add_node("greizhen")
+char_dict["greizhen"] = 562
+sceneG.add_node("unsullied captain")
+char_dict["unsullied captain"] = 563

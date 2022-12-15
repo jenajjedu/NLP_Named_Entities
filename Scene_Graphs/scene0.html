@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "waymar royce", "label": "waymar royce", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "will", "label": "will", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "gared", "label": "gared", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "royce", "label": "royce", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "eddard stark", "label": "eddard stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "jon snow", "label": "jon snow", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "septa mordane", "label": "septa mordane", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "robb stark", "label": "robb stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "theon greyjoy", "label": "theon greyjoy", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "bran stark", "label": "bran stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "sansa stark", "label": "sansa stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "robert baratheon", "label": "robert baratheon", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "catelyn stark", "label": "catelyn stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "cassel", "label": "cassel", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "arya stark", "label": "arya stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "jonrobb", "label": "jonrobb", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "maester luwin", "label": "maester luwin", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "luwin", "label": "luwin", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "jaime lannister", "label": "jaime lannister", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "cersei lannister", "label": "cersei lannister", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ros", "label": "ros", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "tyrion lannister", "label": "tyrion lannister", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "viserys", "label": "viserys", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "daenerys targaryen", "label": "daenerys targaryen", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "maid", "label": "maid", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "illyrio", "label": "illyrio", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"from": "waymar royce", "to": "will", "width": 1}, {"from": "will", "to": "gared", "width": 1}, {"from": "will", "to": "royce", "width": 1}, {"from": "will", "to": "will", "width": 1}, {"from": "will", "to": "eddard stark", "width": 1}, {"from": "gared", "to": "royce", "width": 1}, {"from": "gared", "to": "jon snow", "width": 1}, {"from": "royce", "to": "royce", "width": 1}, {"from": "jon snow", "to": "jon snow", "width": 1}, {"from": "jon snow", "to": "septa mordane", "width": 1}, {"from": "jon snow", "to": "robb stark", "width": 1}, {"from": "jon snow", "to": "eddard stark", "width": 1}, {"from": "jon snow", "to": "theon greyjoy", "width": 1}, {"from": "jon snow", "to": "bran stark", "width": 1}, {"from": "septa mordane", "to": "sansa stark", "width": 1}, {"from": "septa mordane", "to": "eddard stark", "width": 1}, {"from": "sansa stark", "to": "robert baratheon", "width": 1}, {"from": "sansa stark", "to": "eddard stark", "width": 1}, {"from": "eddard stark", "to": "catelyn stark", "width": 1}, {"from": "eddard stark", "to": "cassel", "width": 1}, {"from": "eddard stark", "to": "robb stark", "width": 1}, {"from": "eddard stark", "to": "bran stark", "width": 1}, {"from": "eddard stark", "to": "theon greyjoy", "width": 1}, {"from": "eddard stark", "to": "eddard stark", "width": 1}, {"from": "eddard stark", "to": "arya stark", "width": 1}, {"from": "eddard stark", "to": "robert baratheon", "width": 1}, {"from": "robb stark", "to": "jonrobb", "width": 1}, {"from": "robb stark", "to": "will", "width": 1}, {"from": "robb stark", "to": "theon greyjoy", "width": 1}, {"from": "robb stark", "to": "catelyn stark", "width": 1}, {"from": "jonrobb", "to": "cassel", "width": 1}, {"from": "catelyn stark", "to": "catelyn stark", "width": 1}, {"from": "catelyn stark", "to": "maester luwin", "width": 1}, {"from": "catelyn stark", "to": "luwin", "width": 1}, {"from": "catelyn stark", "to": "jon snow", "width": 1}, {"from": "catelyn stark", "to": "bran stark", "width": 1}, {"from": "catelyn stark", "to": "robert baratheon", "width": 1}, {"from": "bran stark", "to": "cassel", "width": 1}, {"from": "bran stark", "to": "robb stark", "width": 1}, {"from": "theon greyjoy", "to": "bran stark", "width": 1}, {"from": "theon greyjoy", "to": "jaime lannister", "width": 1}, {"from": "jaime lannister", "to": "cersei lannister", "width": 1}, {"from": "jaime lannister", "to": "catelyn stark", "width": 1}, {"from": "jaime lannister", "to": "ros", "width": 1}, {"from": "jaime lannister", "to": "tyrion lannister", "width": 1}, {"from": "cersei lannister", "to": "robert baratheon", "width": 1}, {"from": "cersei lannister", "to": "eddard stark", "width": 1}, {"from": "arya stark", "to": "sansa stark", "width": 1}, {"from": "arya stark", "to": "robert baratheon", "width": 1}, {"from": "robert baratheon", "to": "robert baratheon", "width": 1}, {"from": "robert baratheon", "to": "tyrion lannister", "width": 1}, {"from": "robert baratheon", "to": "viserys", "width": 1}, {"from": "tyrion lannister", "to": "ros", "width": 1}, {"from": "tyrion lannister", "to": "tyrion lannister", "width": 1}, {"from": "viserys", "to": "viserys", "width": 1}, {"from": "viserys", "to": "daenerys targaryen", "width": 1}, {"from": "viserys", "to": "maid", "width": 1}, {"from": "viserys", "to": "illyrio", "width": 1}, {"from": "illyrio", "to": "illyrio", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

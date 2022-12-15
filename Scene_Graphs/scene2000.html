@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "wife", "label": "wife", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "khal moro", "label": "khal moro", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "arya stark", "label": "arya stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "bloodrider", "label": "bloodrider", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "daenerys targaryen", "label": "daenerys targaryen", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "waif", "label": "waif", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "edd", "label": "edd", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "alliser thorne", "label": "alliser thorne", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "davos", "label": "davos", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "nights watchman", "label": "nights watchman", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "walder frey", "label": "walder frey", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "waldery frey", "label": "waldery frey", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "all", "label": "all", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "walder", "label": "walder", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "jon snow", "label": "jon snow", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "meera", "label": "meera", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "bran stark", "label": "bran stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "robett", "label": "robett", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "tormund", "label": "tormund", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "yohn", "label": "yohn", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "sansa stark", "label": "sansa stark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ned alys", "label": "ned alys", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "lyanna", "label": "lyanna", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "wolkan", "label": "wolkan", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "jaime lannister", "label": "jaime lannister", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "cersei lannister", "label": "cersei lannister", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "euron greyjoy", "label": "euron greyjoy", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "marwyn", "label": "marwyn", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "sam", "label": "sam", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"from": "wife", "to": "wife", "width": 1}, {"from": "wife", "to": "khal moro", "width": 1}, {"from": "wife", "to": "arya stark", "width": 1}, {"from": "khal moro", "to": "bloodrider", "width": 1}, {"from": "khal moro", "to": "daenerys targaryen", "width": 1}, {"from": "bloodrider", "to": "bloodrider", "width": 1}, {"from": "daenerys targaryen", "to": "daenerys targaryen", "width": 1}, {"from": "daenerys targaryen", "to": "wife", "width": 1}, {"from": "arya stark", "to": "waif", "width": 1}, {"from": "arya stark", "to": "edd", "width": 1}, {"from": "waif", "to": "waif", "width": 1}, {"from": "waif", "to": "alliser thorne", "width": 1}, {"from": "alliser thorne", "to": "davos", "width": 1}, {"from": "davos", "to": "davos", "width": 1}, {"from": "davos", "to": "nights watchman", "width": 1}, {"from": "davos", "to": "walder frey", "width": 1}, {"from": "nights watchman", "to": "nights watchman", "width": 1}, {"from": "walder frey", "to": "walder frey", "width": 1}, {"from": "walder frey", "to": "waldery frey", "width": 1}, {"from": "waldery frey", "to": "all", "width": 1}, {"from": "all", "to": "walder", "width": 1}, {"from": "all", "to": "jon snow", "width": 1}, {"from": "walder", "to": "walder", "width": 1}, {"from": "walder", "to": "arya stark", "width": 1}, {"from": "edd", "to": "meera", "width": 1}, {"from": "edd", "to": "bran stark", "width": 1}, {"from": "edd", "to": "jon snow", "width": 1}, {"from": "jon snow", "to": "robett", "width": 1}, {"from": "jon snow", "to": "jon snow", "width": 1}, {"from": "jon snow", "to": "tormund", "width": 1}, {"from": "jon snow", "to": "yohn", "width": 1}, {"from": "jon snow", "to": "sansa stark", "width": 1}, {"from": "jon snow", "to": "ned alys", "width": 1}, {"from": "robett", "to": "lyanna", "width": 1}, {"from": "lyanna", "to": "lyanna", "width": 1}, {"from": "lyanna", "to": "jon snow", "width": 1}, {"from": "yohn", "to": "sansa stark", "width": 1}, {"from": "sansa stark", "to": "all", "width": 1}, {"from": "sansa stark", "to": "sansa stark", "width": 1}, {"from": "sansa stark", "to": "wolkan", "width": 1}, {"from": "sansa stark", "to": "jaime lannister", "width": 1}, {"from": "wolkan", "to": "jon snow", "width": 1}, {"from": "jaime lannister", "to": "cersei lannister", "width": 1}, {"from": "jaime lannister", "to": "jaime lannister", "width": 1}, {"from": "jaime lannister", "to": "euron greyjoy", "width": 1}, {"from": "cersei lannister", "to": "cersei lannister", "width": 1}, {"from": "cersei lannister", "to": "euron greyjoy", "width": 1}, {"from": "euron greyjoy", "to": "euron greyjoy", "width": 1}, {"from": "euron greyjoy", "to": "marwyn", "width": 1}, {"from": "marwyn", "to": "marwyn", "width": 1}, {"from": "marwyn", "to": "sam", "width": 1}, {"from": "sam", "to": "sam", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
